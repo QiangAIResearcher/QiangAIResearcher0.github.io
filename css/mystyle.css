@@ -1,0 +1,44 @@
+
+.green-html{
+	width: 100%;
+	background-color: green;
+}
+
+.orange-html{
+	width: 75%;
+	background-color: orange;
+}
+
+.blue-html{
+	width: 50%;
+	background-color:blue;
+}
+
+
+.img-with{
+	width: 50%;
+}
+
+.margin-top{
+	margin-top: 20px; 
+}
+
+.my-font{
+	font-family: 'Indie Sans', cursive;
+	font-weight: 600;
+}
+
+
+
+header{
+	background: url('../img/perfect-background.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 90vh;
+}
+
+.margin-title{
+	margin-top: 40vh;
+}
