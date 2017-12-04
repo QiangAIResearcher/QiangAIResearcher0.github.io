@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogs</title>
+	<!--
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	<a class="navbar-brand" href="#">Navigation</a>
+	  	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    	<ul class="navbar-nav">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="index.html" style="color:rgb(0,0,0)">Home <span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#EducationPosition" style="color:rgb(0,0,0)">Education</a>
+	     		 </li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="#PublicationsPosition" style="color:rgb(0,0,0)">Publications</a>
+	      		</li>
+		      	<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:rgb(0,0,0)">Research Projects</a>
+		        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          		<a class="dropdown-item" href="#OptimizationofNeuralModelTrainingPosition" >Optimization of Neural Model Training</a>
+		          		<a class="dropdown-item" href="#FakeNewsDetectionPosition">Fake News Detection</a>
+		          		<a class="dropdown-item" href="#WearableComputingPosition">Wearable Computing</a>
+		        	</div>
+		      	</li>
+		      	<li class="nav-item">
+	        		<a class="nav-link" href="#BlogsPosition" style="color:rgb(0,0,0)">Blogs</a>
+	      		</li>
+	    	</ul>
+	  	</div>
+	</nav>
+
+
+	<div class="container margin-top">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card text-center description">
+					<div class="card-block">
+						<img class="rounded-circle animated infinite" src="img/Qiang.jpg" width="150" height="150">
+						<h4 class="card-title margin-top"> Qiang (John) Zhang </h4>
+						<p class="card-text">
+							Artificial Intelligence Researcher!
+						</p>
+					</div>
+					<div class="card-footer">
+						<a href="https://www.linkedin.com/in/%E5%BC%BA-%E5%BC%A0-050827b4/">
+							<i class="fa fa-linkedin-square fa-2x"> </i>
+						</a>
+						<a href="https://scholar.google.com/citations?user=ZKuRZaEAAAAJ&hl=zh-CN">
+							<i class="fa fa-google fa-2x"> </i>
+						</a>
+						<a href="https://github.com/QiangAIResearcher">
+							<i class="fa fa-github fa-2x" aria-hidden="true"> </i>
+						</a>
+					</div>
+				</div>
+				<div class="card information margin-top">
+					<div class="card-block">
+						<h3 class="card-title" > Information</h3> 
+						<!--<h3 class="card-title my-font" style="color:rgb(255,0,0)"> Information</h3>-->
+						<p>
+							<i class="fa fa-graduation-cap"></i>
+							PhD, UCL
+						</p>
+						<p>
+							<i class="fa fa-map-marker"></i>
+							90 High Holborn, London	
+						</p>						
+						<p>
+							<i class="fa fa-heart"></i>
+							Researching, Travelling...
+						</p>
+						<p>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							qiang.zhang.16@ucl.ac.uk
+						</p>						
+					</div>
+				</div>
+				<div class="card skills margin-top">
+					<div class="card-block">
+						<h3 class="card-title" > Skills</h2>
+						<span>Python, Tensorflow, LaTex</span>
+						<div class="progress">
+							<div class="progress-bar green-html">
+								100%
+							</div>
+						</div>
+						<span>C, HTML, CSS, Matlab</span>
+						<div class="progress">
+							<div class="progress-bar orange-html">
+								75%
+							</div>
+						</div>
+						<span>Java, R, Go</span>
+						<div class="progress">
+							<div class="progress-bar blue-html">
+								50%
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!--This is the end of the first column and start of the second column-->
+			<div class="col-md-8">
+				<div class="card-block Information">
+					<h4 style="color: rgb(255,0,0);"> <a id="HomePosition"></a> A Joint Model for Question Answering and Question Generation</h4>
+				<p>
+					This paper jointly learns a attention-based generative model for two tasks: question generation and question answering. The model encodes the document and the context (indeicating Q-gen or A-gen) to obtain answers given question or questions given answers. The pointer-softmax mechanism learns to switch between between copying words from the document and generating words from a prescribed vocabulary. The promising phenomenia includes a higher performance for for the answer generation, which is probably because that the answers produced by the joint model are highly related by the generated questions. This paper could be enhanced by including more explaination of experiment results and error analysis. 
+				</p>
+				<p>
+					By alternating the input of question generation and answer generation, this paper inspires us to sovle problems by joint training. The beneficial intreaction between two tasks through parameter sharing could help imrpove each task under a multitask setting. 4/12/2017
+				</p>
+
+				</div>
+
+			</div>
+
+			<!--This is the end of the row-->
+		</div>
+		<!--This is the end of the first container-->
+
+	</div>
+
+
+
+	<div class="container margin-top">
+		<div class="row">
+			<div class="col-md-3">	
+				<img src="img/ucl.png" height="150">
+			</div>
+			<div class="col-md-3">	
+				<img src="img/ucl_cs.jpg" height="150">
+			</div>
+			<div class="col-md-3">	
+				<img src="img/ucl_csml.jpg" height="150">
+			</div>
+			<div class="col-md-3">	
+				<img src="img/ucl_engineering.png" height="130">
+			</div>
+
+		</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
